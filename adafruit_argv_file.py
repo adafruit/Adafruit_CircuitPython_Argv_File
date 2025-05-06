@@ -50,7 +50,7 @@ def argv_filename(python_code_filepath: str, file_location: str = "/saves/"):
     :return: The argv filename.
     """
     path = Path(python_code_filepath)
-    return f"{file_location}.{path.absolute().replace('/', "_")}.argv"
+    return f"{file_location}.{path.absolute().replace("/", "_")}.argv"
 
 
 def read_argv(python_code_filepath: str, file_location: str = "/saves/") -> Optional[list]:
